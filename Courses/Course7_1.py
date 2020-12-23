@@ -22,6 +22,9 @@ rcParams['figure.figsize'] = 12, 4
 data = pd.read_csv("Optimization_Algo_Example.csv")
 print(data.head(10))
 
+data = data[data.ts_clicks > 4]
+print(data.head(10))
+
 x = data[['tr_clicks', 'lp_clicks', 'impressions', 'TR.NET', 'TR.ROI', 'EPC']]
 y = data[['Bid_suggestion']]
 
