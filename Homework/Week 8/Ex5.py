@@ -17,11 +17,8 @@ print(data_test)
 
 plt.figure(1)
 data_test['lp_clicks'].hist()
-
 plt.figure(2)
 plt.boxplot(data_test['lp_clicks'])
-
 plt.figure(3)
 plt.scatter(data_test['tr_clicks'], data_test['lp_clicks'])
-
 plt.show()

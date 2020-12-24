@@ -14,4 +14,3 @@ array = np.random.random(100000000)
 
 time = running_time(array)
 print(time)
-
